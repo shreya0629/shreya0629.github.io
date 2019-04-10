@@ -9,3 +9,27 @@ body{
 img{display: block;
 	width: 100%;
 }
+
+.clearfix:after{
+content:"";
+display:block;
+clear:both;
+}
+
+
+.textside,.imageside {
+	width: 50%;
+}
+
+.imageleft .imageside{
+	float:left;
+}
+.imageleft .textside{
+	float:right;
+}
+.imageright .imageside{
+	float:right;
+}
+.imageright .textside{
+	float:left;
+}
