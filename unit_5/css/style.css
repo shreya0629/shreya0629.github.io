@@ -10,12 +10,35 @@ img{display: block;
 	width: 100%;
 }
 
+#healthsystemlogo {
+	width:15%;
+}
+
+.headerlink {
+	color: black;
+	font-size: 1em;
+}
+
+.navlink {
+	color: #2E4DA0;
+	font-size: 1em;
+}
+
+.herobutton{
+	color: grey;
+	font-weight: bold;
+	font-size: 2em;
+}
+
 .clearfix:after{
 content:"";
 display:block;
 clear:both;
 }
 
+.textside {
+	color: #6678A9;
+}
 
 .textside,.imageside {
 	width: 50%;
