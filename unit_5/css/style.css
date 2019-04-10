@@ -10,6 +10,16 @@ img{display: block;
 	width: 100%;
 }
 
+#mayohomelogo {
+	width: 25%;
+	align-content: center;
+}
+
+.homeoption {
+	color: #1A2D5F;
+	font-size: 1.5em;
+}
+
 #healthsystemlogo {
 	width:15%;
 }
