@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+* {margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family:Nunito Sans;
+}
+img{display: block;
+	width: 100%;
+}
+
+#mayohomelogo {
+	width: 25%;
+	align-content: center;
+}
+
+.homeoption {
+	color: #1A2D5F;
+	font-size: 1.5em;
+}
+
+#healthsystemlogo {
+	width:15%;
+}
+
+.headerlink {
+	color: black;
+	font-size: 1em;
+}
+
+.navlink {
+	color: #2E4DA0;
+	font-size: 1em;
+}
+
+.herobutton{
+	color: grey;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.clearfix:after{
+content:"";
+display:block;
+clear:both;
+}
+
+.textside {
+	color: #6678A9;
+}
+
+.textside,.imageside {
+	width: 50%;
+}
+
+.imageleft .imageside{
+	float:left;
+}
+.imageleft .textside{
+	float:right;
+}
+.imageright .imageside{
+	float:right;
+}
+.imageright .textside{
+	float:left;
+}
