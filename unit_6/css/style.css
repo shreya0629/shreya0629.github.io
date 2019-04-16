@@ -10,6 +10,17 @@ img{display: block;
 	width: 100%;
 }
 
+nav {
+	float: left;
+	background: #d8d8d8;
+}
+
+.navlink {
+	text-decoration: none;
+	color: #2e4da0;
+	font-size: 1em;
+}
+
 #mayohomelogo {
 	width: 25%;
 	align-content: center;
@@ -19,6 +30,7 @@ img{display: block;
 	color: #1A2D5F;
 	font-size: 1.5em;
 	text-decoration: none;
+	float: left;
 }
 
 #healthsystemlogo {
