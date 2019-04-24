@@ -28,6 +28,15 @@ header .column:last-child {
 	align-items: center;
 }
 
+#homeoptioncontainer {
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 #healthsystemlogo {
 	width: 100%;
@@ -77,15 +86,22 @@ header .column:last-child {
 }
 
 #mayohomelogo {
-	width: 25%;
-	align-content: center;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 50px 0;
 }
 
 .homeoption {
 	color: #1A2D5F;
 	font-size: 1.5em;
 	text-decoration: none;
-	float: left;
+	padding: 10px;
+}
+
+.homeoptiondot {
+	font-size: 4em;
+	color:blue;
 }
 
 
@@ -151,9 +167,15 @@ clear:both;
 	width: 15%;
 }
 
+#mayofooter {
+	display: inline-flex;
+	align-items: right;
+}
+
 footer {
-	color: #003DA5;
+	background: #003DA5;
 	height: 80px;
+	padding: 30px;
 }
 
 @media (max-width: 768px) {
