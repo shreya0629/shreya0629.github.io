@@ -94,11 +94,31 @@ header .column:last-child {
 	font-size: 1em;
 }
 
+#hero {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.herobuttoncontainer {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	width:60%;
+}
+
 .herobutton{
 	color: grey;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1.5em;
 	text-decoration: none;
+	display: block;
+	background: blue;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+	white-space: nowrap;
 }
 
 .clearfix:after{
@@ -109,23 +129,22 @@ clear:both;
 
 .textside {
 	color: #6678A9;
+	padding: 20px;
 }
+
+.imageright,.imageleft {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imageleft {
+	flex-direction: row-reverse;
+}
+
 
 .textside,.imageside {
 	width: 50%;
-}
-
-.imageleft .imageside{
-	float:left;
-}
-.imageleft .textside{
-	float:right;
-}
-.imageright .imageside{
-	float:right;
-}
-.imageright .textside{
-	float:left;
 }
 
 #socialbuttons {
@@ -133,6 +152,18 @@ clear:both;
 }
 
 footer {
-	color: 003DA5;
+	color: #003DA5;
 	height: 80px;
 }
+
+@media (max-width: 768px) {
+	.textside,.imageside {
+		width:100%;
+	}
+	.imageleft,.imageright {
+		flex-direction: column;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+}
+
