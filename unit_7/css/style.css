@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+* {margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family:Nunito Sans;
+}
+img{display: block;
+	width: 100%;
+}
+
+header {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .column {
+	width: 50%;
+}
+
+header .column:last-child {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+
+#healthsystemlogo {
+	width: 100%;
+	max-width: 300px;
+}
+
+.headerlink {
+	color: black;
+	font-size: 1em;
+	padding-left: 1em;
+	text-decoration: none;
+}
+
+#secondarynav {
+	background: #f8f8f8;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#secondarynav .column:last-child {
+	display: flex;
+	align-items: center;
+}
+
+.navlink {
+	text-decoration: none;
+	color: #2e4da0;
+	font-size: 1em;
+	padding: 0 20px;
+}
+
+.navlink:hover {
+	color: #4a8ad4;
+}
+
+#smallsearch {
+	width: 50px;
+	height: 38px;
+	background: transparent url(../images/smallsearch.png) no-repeat center center;
+	background-size: 100% auto;
+	text-indent: -999999em;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#mayohomelogo {
+	width: 25%;
+	align-content: center;
+}
+
+.homeoption {
+	color: #1A2D5F;
+	font-size: 1.5em;
+	text-decoration: none;
+	float: left;
+}
+
+
+.navlink {
+	color: #2E4DA0;
+	font-size: 1em;
+}
+
+.herobutton{
+	color: grey;
+	font-weight: bold;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+.clearfix:after{
+content:"";
+display:block;
+clear:both;
+}
+
+.textside {
+	color: #6678A9;
+}
+
+.textside,.imageside {
+	width: 50%;
+}
+
+.imageleft .imageside{
+	float:left;
+}
+.imageleft .textside{
+	float:right;
+}
+.imageright .imageside{
+	float:right;
+}
+.imageright .textside{
+	float:left;
+}
+
+#socialbuttons {
+	width: 15%;
+}
+
+footer {
+	color: 003DA5;
+	height: 80px;
+}
