@@ -39,8 +39,8 @@ header .column:last-child {
 
 
 #healthsystemlogo {
-	width: 100%;
-	max-width: 300px;
+	width: 50%;
+	max-width: 200px;
 }
 
 .headerlink {
@@ -50,17 +50,41 @@ header .column:last-child {
 	text-decoration: none;
 }
 
-#secondarynav {
+#secondarynavcontainer{
 	background: #f8f8f8;
-	padding: 20px 0;
+	padding: 15px 0;
+	position: relative;
+}
+
+#secondarynav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+	width: 100%;
 }
 
 #secondarynav .column:last-child {
 	display: flex;
 	align-items: center;
+}
+
+#secondarynavcontainer input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 9;
+}
+
+#secondarynavcontainer button {
+	display: none;
+}
+
+.mobile {
+	display: none;
 }
 
 .navlink {
@@ -115,8 +139,10 @@ header .column:last-child {
 
 #hero {
 	position: relative;
-	margin-bottom: 50px;
-	height: 60%;
+	height: 400px;
+	overflow: hidden;
+	background: transparent url(../images/mayoclinichero.jpg) center center no-repeat;
+	background-size: cover;
 }
 
 .herobuttoncontainer {
@@ -135,7 +161,7 @@ header .column:last-child {
 	text-align: center;
 	text-decoration: none;
 	display: block;
-	background: rgba(74, 144, 226, 88);
+	background: rgba(74, 144, 226, .88);
 	padding: 10px;
 	margin: 10px;
 	width: 50%;
@@ -181,6 +207,24 @@ display:block;
 clear:both;
 }
 
+.imageside {
+	position: relative;
+}
+
+.imageside h3 {
+	position: absolute;
+	bottom: -20px;
+	z-index: 2;
+}
+
+.imageright .imageside h3 {
+	left: -10px;
+}
+
+.imageleft .imageside h3 {
+	right: -10px;
+}
+
 .textside {
 	color: #6678A9;
 	padding: 20px;
@@ -190,10 +234,22 @@ clear:both;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	max-width: 1024px;
+	margin: 120px auto;
 }
 
 .imageleft {
 	flex-direction: row-reverse;
+	padding-right: 20px;
+}
+
+.imageleft:first-child {
+	margin:60px auto;
+}
+
+.imageright {
+	padding-left: 20px;
 }
 
 
@@ -202,12 +258,7 @@ clear:both;
 }
 
 #socialbuttons {
-	width: 15%;
-}
-
-#mayofooter {
-	display: inline-flex;
-	align-items: right;
+	width: 200px;
 }
 
 footer {
@@ -216,9 +267,18 @@ footer {
 	padding: 30px;
 	color: white;
 	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 @media (max-width: 768px) {
+	.headerlink {
+		display:none;
+	}
+	.mobile {
+		display:block;
+	}
 	.textside,.imageside {
 		width:100%;
 	}
@@ -226,6 +286,41 @@ footer {
 		flex-direction: column;
 		flex-wrap: wrap;
 		flex-direction: column-reverse;
+	}
+	.herobuttoncontainer {
+		flex-direction: column;
+	}
+	.herobutton {
+		width: 100%;
+	}
+	.textside {
+		padding: 30px;
+	}
+	#secondarynavcontainer button {
+		display: block;
+	}
+	#secondarynav {
+		display: block;
+		width:100%;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 500ms linear;
+	}
+	#secondarynav .column:last-child {
+		display: block;
+	}
+	.navlink {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 5px;
+	}
+	#smallsearch {
+		display: block;
+		margin: 0 auto;
+	}
+	input:checked ~ #secondarynav {
+		max-height: 600px;
 	}
 }
 
