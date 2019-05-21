@@ -39,8 +39,7 @@ header .column:last-child {
 
 
 #healthsystemlogo {
-	width: 50%;
-	max-width: 200px;
+	width: 200px;
 }
 
 .headerlink {
@@ -62,6 +61,7 @@ header .column:last-child {
 	align-items: center;
 	position: relative;
 	width: 100%;
+	z-index: 99;
 }
 
 #secondarynav .column:last-child {
@@ -81,6 +81,8 @@ header .column:last-child {
 
 #secondarynavcontainer button {
 	display: none;
+	border: 0;
+	margin: 0 auto;
 }
 
 .mobile {
@@ -185,10 +187,16 @@ button {
 }
 
 #findaservice {
-	background: #4A8AD4;
+	background: rgba(74, 138, 212, 1);
 	color: white;
 	padding: 10px;
 	width: 50%;
+	cursor: pointer;
+	transition: background 500ms linear;
+}
+
+#findaservice:hover {
+	background: rgba(74, 138, 212, 0.85);
 }
 
 #findaclass {
@@ -277,7 +285,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-	.headerlink {
+	#healthsystembody .headerlink {
 		display:none;
 	}
 	.mobile {
@@ -309,8 +317,6 @@ footer {
 		max-height: 0;
 		overflow: hidden;
 		transition: max-height 500ms linear;
-		position: relative;
-		z-index: 99;
 	}
 	#secondarynav .column:last-child {
 		display: block;
@@ -323,7 +329,7 @@ footer {
 	}
 	#smallsearch {
 		display: block;
-		margin: 0 auto;
+		margin: 0 auto 5px auto;
 	}
 	input:checked ~ #secondarynav {
 		max-height: 600px;
