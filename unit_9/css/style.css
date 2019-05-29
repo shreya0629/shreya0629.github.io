@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+* {margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family:Nunito Sans;
+}
+img{display: block;
+	width: 100%;
+}
+
+header {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .column {
+	width: 50%;
+}
+
+header .column:last-child {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#homeoptioncontainer {
+	width: 100%;
+	max-width: 768px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#healthsystemlogo {
+	width: 200px;
+}
+
+.headerlink {
+	color: black;
+	font-size: 1em;
+	padding-left: 1em;
+	text-decoration: none;
+}
+
+.headerlink:hover {
+	color: #A6B3D6;
+}
+
+#secondarynavcontainer{
+	background: #f8f8f8;
+	padding: 15px 0;
+	position: relative;
+}
+
+#secondarynav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	z-index: 99;
+}
+
+#secondarynav .column:last-child {
+	display: flex;
+	align-items: center;
+}
+
+#secondarynavcontainer input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 9;
+}
+
+#secondarynavcontainer button {
+	display: none;
+	border: 0;
+	margin: 0 auto;
+}
+
+.mobile {
+	display: none;
+}
+
+.navlink {
+	text-decoration: none;
+	color: #2e4da0;
+	font-size: 1em;
+	padding: 0 20px;
+}
+
+.navlink:hover {
+	color: #A6B3D6;
+}
+
+#smallsearch {
+	width: 50px;
+	height: 38px;
+	background: transparent url(../images/smallsearch.png) no-repeat center center;
+	background-size: 100% auto;
+	text-indent: -999999em;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#indexsearch #smallsearch {
+	position: absolute;
+	top: 0;
+	left: -15px;
+}
+
+#indexsearch {
+	display: inline-flex;
+	justify-content: center;
+	position: relative;
+}
+
+#searchbox {
+	border: none;
+	background: #B7C1DC;
+	border-radius: 33px;
+	height: 38px;
+	display: flex;
+}
+
+#mayohomelogo {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.homeoption {
+	color: #1A2D5F;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.homeoption:hover {
+	color: #A6B3D6;
+}
+
+.homeoptiondot {
+	height: 1em;
+	width: 1em;
+	background-color: #A6B3D6;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+
+.navlink {
+	color: #2E4DA0;
+	font-size: 1em;
+}
+
+#hero {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+	background: transparent url(../images/mayoclinichero.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.herobuttoncontainer {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	width:60%;
+}
+
+.herobutton{
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	background: rgba(74, 144, 226, .88);
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+	white-space: nowrap;
+}
+
+.herobutton:hover {
+	color: #E1E9FF;
+	background: rgba(74, 144, 226, .93);
+}
+
+#findaprovider {
+	background: rgba(46, 77, 160, 0.95);
+	color: white;
+	padding: 10px;
+	width: 50%;
+}
+
+#findaprovider:hover {
+	background: #2E4DA0;
+	color: #EDF2FE;
+}
+
+#findaservice {
+	background: rgba(74, 138, 212, 0.93);
+	color: white;
+}
+
+#findaservice:hover {
+	background: rgba(74, 138, 212, 1);
+	color: #EDF2FE;
+}
+
+#findaclass {
+	background: rgba(83, 112, 146, .93);
+	color: #EDF2FE;
+}
+
+#findaclass:hover {
+	background: rgba(83, 112, 146, 1);
+	color: #EDF2FE;
+}
+
+#visitourblog {
+	background: #8BADD4;
+	color: #EDF2FE;
+	background: rgba(139, 173, 212, .93);
+	color: white;
+}
+
+#visitourblog:hover {
+	background: rgba(139, 173, 212, 1);
+	color: #EDF2FE;
+}
+
+.clearfix:after{
+content:"";
+display:block;
+clear:both;
+}
+
+.imageside {
+	position: relative;
+}
+
+.imageside a {
+	position: absolute;
+	bottom: -20px;
+	z-index: 2;
+	text-decoration: none;
+	display: block;
+	width: 50%;
+	color: white;
+	padding: 10px;
+	transition: background 150ms linear;
+}
+
+.imageright .imageside a {
+	left: -10px;
+}
+
+.imageleft .imageside a {
+	right: -10px;
+}
+
+.textside {
+	color: #6678A9;
+	padding: 20px;
+}
+
+.imageright,.imageleft {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1024px;
+	margin: 120px auto;
+}
+
+.imageleft {
+	flex-direction: row-reverse;
+	padding-right: 20px;
+}
+
+.imageleft:first-child {
+	margin:60px auto;
+}
+
+.imageright {
+	padding-left: 20px;
+}
+
+
+.textside,.imageside {
+	width: 50%;
+}
+
+#socialbuttons {
+	width: 200px;
+}
+
+footer {
+	background: #003DA5;
+	height: 80px;
+	padding: 30px;
+	color: white;
+	text-align: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	#homeoptioncontainer {
+		flex-direction: column;
+	}
+	.homeoptiondot {
+		display:none;
+	}
+	#healthsystembody header{
+		display: block;
+	}
+	header .column {
+		width: 100%;
+	}
+	#healthsystemlogo {
+		margin: 0 auto;
+	}
+	#healthsystembody .headerlink {
+		display:none;
+	}
+	.mobile {
+		display:block;
+	}
+	.textside,.imageside {
+		width:100%;
+	}
+	.imageleft,.imageright {
+		flex-direction: column;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+	}
+	.herobuttoncontainer {
+		flex-direction: column;
+	}
+	.herobutton {
+		width: 100%;
+	}
+	.textside {
+		padding: 30px;
+	}
+	#secondarynavcontainer button {
+		display: block;
+	}
+	#secondarynav {
+		display: block;
+		width:100%;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 500ms linear;
+	}
+	#secondarynav .column:last-child {
+		display: block;
+	}
+	.navlink {
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 5px;
+	}
+	#smallsearch {
+		display: block;
+		margin: 0 auto 5px auto;
+	}
+	input:checked ~ #secondarynav {
+		max-height: 600px;
+	}
+}
+
